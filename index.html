@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/styel.css">
+
+    <title> Weather app</title>
+</head>
+
+<body>
+    <main class="main-container">
+
+        <div class="location-and-date">
+            <h1 class="location-and-date__location">
+                <i class="fa-solid fa-cloud" style="color: #74C0FC;"></i>
+                Weather
+            </h1>
+            <div> <span id="day">Sunday</span> <span id="month">4th August</span> <span id="year">year</span> <span
+                    id="hour">year</span> </div>
+        </div>
+        <form action="" class="w-100 mt-5 text-center">
+            <input type="text" class=" w-75 rounded-pill border-0 bg-black bg-opacity-50 py-3 ps-4 mb-5 text-white"
+                placeholder="Search on city" id="input_weather">
+            <button id="submit" type="button" class="btn btn-dark  ps-4  py-2">submit</button>
+        </form>
+
+
+        <div class="current-temperature">
+            <div class="current-temperature__icon-container">
+                <!-- <img id="img" src="" class="current-temperature__icon" alt=""> -->
+            </div>
+            <div class="current-temperature__content-container">
+                <div id="TEMP_value" class="current-temperature__value">21 C</div>
+                <div class="current-temperature__summary">TEMP_C</div>
+            </div>
+        </div>
+
+        <div class="current-stats">
+            <div>
+              <div id="TEMP_max" class="current-stats__value">23&deg;</div>
+              <div class="current-stats__label">TEMP_max</div>
+              <div id="HUMIDITY" class="current-stats__value">14&deg;</div>
+              <div class="current-stats__label">HUMIDITY</div>
+            </div>
+            <div>
+              <div id="WIND_SPEED" class="current-stats__value">7mph</div>
+              <div class="current-stats__label">WIND_SPEED</div>
+              <div id="humidity" class="current-stats__value">0%</div>
+              <div class="current-stats__label">humidity</div>
+            </div>
+            <div>
+              <div id="country_value" class="current-stats__value">country</div>
+              <div class="current-stats__label">country</div>
+              <div id="city" class="current-stats__value">city</div>
+              <div class="current-stats__label">city</div>
+            </div>
+          </div>
+
+
+
+        <div class="next-5-days">
+            <h2 class="next-5-days__heading">Next 5 days</h2>
+            <div class="next-5-days__container">
+
+                <div class="next-5-days__row">
+
+                    <div class="next-5-days__date">
+                        date
+                        <div id="next_date2" class="next-5-days__label">30/7</div>
+                    </div>
+
+                    <div class="next-5-days__low">
+                        temp_c
+                        <div id="next_temp" class="next-5-days__label">10.2</div>
+                    </div>
+
+                    <div class="next-5-days__high">
+                        temp_f
+                        <div id="temp_f" class="next-5-days__label">20.5</div>
+                    </div>
+
+                    <div class="next-5-days__icon">
+                        day
+                        <div id="next_day" class="next-5-days__label">High</div>
+                    </div>
+
+                    <div class="next-5-days__rain">
+                        humidity
+                        <div id="next_humidity" class="next-5-days__label">Rain</div>
+                    </div>
+
+                    <div class="next-5-days__wind">
+                        wind
+                        <div id="next_wind" class="next-5-days__label">Wind</div>
+                    </div>
+
+                </div>
+
+                <div class="next-5-days__row">
+
+                    <div class="next-5-days__date">
+                        date
+                        <div id="next_date3" class="next-5-days__label">30/7</div>
+                    </div>
+
+                    <div class="next-5-days__low">
+                        temp_c
+                        <div id="next_temp3" class="next-5-days__label">10.2</div>
+                    </div>
+
+                    <div class="next-5-days__high">
+                        temp_f
+                        <div id="temp_f3" class="next-5-days__label">20.5</div>
+                    </div>
+
+                    <div class="next-5-days__icon">
+                        day
+                        <div id="next_day3" class="next-5-days__label">High</div>
+                    </div>
+
+                    <div class="next-5-days__rain">
+                        humidity
+                        <div id="next_humidity3" class="next-5-days__label">Rain</div>
+                    </div>
+
+                    <div class="next-5-days__wind">
+                        wind
+                        <div id="next_wind3" class="next-5-days__label">Wind</div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="next-5-days__row">
+
+                    <div class="next-5-days__date">
+                        date
+                        <div id="next_date4" class="next-5-days__label">30/7</div>
+                    </div>
+
+                    <div class="next-5-days__low">
+                        temp_c
+                        <div id="next_temp4" class="next-5-days__label">10.2</div>
+                    </div>
+
+                    <div class="next-5-days__high">
+                        temp_f
+                        <div id="temp_f4" class="next-5-days__label">20.5</div>
+                    </div>
+
+                    <div class="next-5-days__icon">
+                        day
+                        <div id="next_day4" class="next-5-days__label">High</div>
+                    </div>
+
+                    <div class="next-5-days__rain">
+                        humidity
+                        <div id="next_humidity4" class="next-5-days__label">Rain</div>
+                    </div>
+
+                    <div class="next-5-days__wind">
+                        wind
+                        <div id="next_wind4" class="next-5-days__label">Wind</div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="javascreipt/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="javascreipt/bootstrap.bundle.min.js"></script>
+    <script src="javascreipt/java.js"></script>
+</body>
+
+</html>
