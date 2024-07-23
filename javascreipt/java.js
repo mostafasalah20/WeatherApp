@@ -43,7 +43,7 @@ function display_weather(data) {
     document.getElementById("WIND_SPEED").innerHTML = `${data.current.wind_kph} Km/h`;
     document.getElementById("humidity").innerHTML = `${data.current.humidity}`;
     document.getElementById("city").innerHTML = `${data.location.name}`;
-    img.setAttribute('src', data.current.condition.icon);
+    img.setAttribute('src', data.current.condition.icon);   
     let date = new Date(data.current.last_updated);
     document.getElementById("day").innerHTML = `${date.toLocaleString("en-us", { weekday: 'long' })}`;
     document.getElementById("month").innerHTML = `${date.toLocaleString("en-us", { day: 'numeric', month: 'long' })}`;
@@ -79,5 +79,5 @@ function isplay_weather4(data){
     document.getElementById("next_temp4").innerHTML = `${data.forecast.forecastday[3].day.maxtemp_c} C`;
     document.getElementById("temp_f4").innerHTML = `${data.forecast.forecastday[3].day.maxtemp_f}C`;
     document.getElementById("next_humidity4").innerHTML = `${data.forecast.forecastday[3].day.avghumidity} %`;
-    document.getElementById("next_wind4").innerHTML = `${data.forecast.forecastday[2].day.maxwind_kph} Km/h`;
+    document.getElementById("next_wind4").innerHTML = `${data.forecast.forecastday[3].day.maxwind_kph} Km/h`;
 }
